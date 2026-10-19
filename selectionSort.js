@@ -1,6 +1,13 @@
-const livros= require('./listaLivro');
-const menorValor = require('./menorValor'); 
+const livros = require('./lista-livros.js');
+const menorValor = require('./menor-valor.js');
 
-for (let atual=0; atual < livros.length; atual++){
+for (let atual = 0; atual < livros.length; atual++){
+let menor = menorValor(livros, atual);
+let livroAtual = livros[atual];
+let livroMenorPreco = livros[menor];
 
+livros[atual] = livroMenorPreco;
+livros[menor] = livroAtual;
 }
+
+console.log(livros);
