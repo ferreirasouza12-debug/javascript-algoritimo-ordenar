@@ -14,3 +14,5 @@ const adGalho = [
     {titulo: 'C++', preco: 35},
     {titulo: 'Scala', preco: 40},
 ]
+
+module.exports = {edFolha, adGalho}
